@@ -1,0 +1,17 @@
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  name: mycustomresources.mygroup-b.example.com
+spec:
+  group: mygroup-b.example.com
+  versions:
+    name: v1
+  names:
+    kind: MyCustomResource
+    plural: mycustomresources
+  scope: Namespaced
+  validation:
+    openAPIV3Schema:
+      properties:
+        spec:
+          type: object

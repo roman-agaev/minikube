@@ -1,0 +1,6 @@
+apiVersion: mygroup-a.example.com/v1
+kind: MyCustomResource
+metadata:
+  name: test-app
+spec:
+  replicas: 3
